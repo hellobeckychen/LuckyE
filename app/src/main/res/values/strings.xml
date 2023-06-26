@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LuckyE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txtButton1">選項</string>
+    <string name="txtButton2">選項</string>
+    <string name="txtButton3">選項</string>
+    <string name="txtButton4">選項</string>
+    <string name="txtPick">選項</string>
+    <string name="txtConfirm">送出答案</string>
+    <string name="txtBack">返回</string>
+    <string name="txtName">輸入你的名字</string>
+    <string name="txtSend">送出</string>
+    <string name="errUidEmpty">名字不可空白</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".controller.PageThreeFragment">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.luckye.PageThreeViewModel" />
+        
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/imageViewBG3"
+            android:layout_width="407dp"
+            android:layout_height="728dp"
+            android:background="#020209"
+            android:src="@drawable/page3background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.333" />
+
+        <ImageView
+            android:id="@+id/imageViewPurple"
+            android:layout_width="414dp"
+            android:layout_height="532dp"
+            android:layout_marginTop="80dp"
+            android:alpha="0.8"
+            android:src="@drawable/page3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewBG3" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="446dp"
+            android:gravity="center"
+            android:text="@{viewModel.score}"
+            android:textColor="@color/design_default_color_background"
+            android:alpha="0.8"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewBG3"
+            app:layout_constraintStart_toStartOf="@+id/imageViewBG3"
+            app:layout_constraintTop_toTopOf="@+id/imageViewBG3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

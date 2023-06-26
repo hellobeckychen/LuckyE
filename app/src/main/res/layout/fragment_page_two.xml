@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".controller.PageTwoFragment">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.luckye.PageTwoViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#050414">
+
+
+        <ImageView
+            android:id="@+id/imageViewBG2"
+            android:layout_width="406dp"
+            android:layout_height="731dp"
+            android:background="#050414"
+            android:src="@drawable/page2background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btLeftTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="216dp"
+            android:alpha="0.8"
+            android:backgroundTint="@color/color"
+            android:hint="選項"
+            android:text="@{viewModel.答案A}"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.204"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btLeftDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:alpha="0.8"
+            android:backgroundTint="@color/colorBL"
+            android:hint="選項"
+            android:text="@{viewModel.答案C}"
+            android:textColor="@color/material_dynamic_neutral100"
+            app:layout_constraintEnd_toEndOf="@+id/btLeftTop"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btLeftTop"
+            app:layout_constraintTop_toBottomOf="@+id/btLeftTop" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btRightTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="216dp"
+            android:alpha="0.8"
+            android:backgroundTint="@color/design_default_color_error"
+            android:hint="選項"
+            android:text="@{viewModel.答案B}"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.77"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btRightDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:alpha="0.8"
+            android:backgroundTint="@color/colorGN"
+            android:hint="選項"
+            android:text="@{viewModel.答案D}"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/btRightTop"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btRightTop"
+            app:layout_constraintTop_toBottomOf="@+id/btRightTop" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="580dp"
+            android:alpha="0.8"
+            android:background="@drawable/button"
+            android:text="@string/txtConfirm"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewBG2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

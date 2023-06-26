@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/luckye1" android:duration="100" />
+    <item android:drawable="@drawable/page2background" android:duration="100" tools:ignore="StateListReachable" />
+    <item android:drawable="@drawable/page3background" android:duration="100" />
+    <!-- 添加其他每一幀的GIF圖片 -->
+</selector>
