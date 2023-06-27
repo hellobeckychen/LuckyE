@@ -39,7 +39,7 @@
             android:hint="選項"
             android:text="@{viewModel.答案A}"
             android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btRightTop"
             app:layout_constraintHorizontal_bias="0.204"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -70,7 +70,7 @@
             android:text="@{viewModel.答案B}"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.77"
+            app:layout_constraintHorizontal_bias="0.869"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -84,7 +84,7 @@
             android:hint="選項"
             android:text="@{viewModel.答案D}"
             android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="@+id/btRightTop"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/btRightTop"
             app:layout_constraintTop_toBottomOf="@+id/btRightTop" />
